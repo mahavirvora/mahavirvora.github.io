@@ -3,91 +3,90 @@
   <head>
     <title>Mahavir Vora | Web Portfolio</title>
     <style>
-      /* Add your CSS styles here */
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-      }
-      .header {
-        background-image: linear-gradient(to right, #6e45e2, #88d3ce);
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        justify-content: center;
-      }
-      .header h1 {
-        margin: 0;
-        font-size: 48px;
-        color: #fff;
-        text-shadow: 1px 1px #333;
-        animation: fadeIn 1s ease-in-out;
-      }
-      .header h2 {
-        margin: 0;
-        font-size: 24px;
-        color: #fff;
-        text-shadow: 1px 1px #333;
-        animation: fadeIn 1s ease-in-out;
-        animation-delay: 0.5s;
-      }
-      .header span {
-        font-size: 16px;
-        color: #fff;
-        text-shadow: 1px 1px #333;
-        animation: fadeIn 1s ease-in-out;
-        animation-delay: 1s;
-      }
-      .header .card {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px #333;
-        padding: 20px;
-        text-align: center;
-        width: 300px;
-        animation: slideIn 1s ease-in-out;
-        animation-delay: 1.5s;
-      }
-      .header .card h3 {
-        margin: 0;
-        font-size: 20px;
-        color: #6e45e2;
-      }
-      .header .card p {
-        margin: 0;
-        font-size: 16px;
-        color: #333;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes slideIn {
-        from {
-          transform: translateY(50px);
-        }
-        to {
-          transform: translateY(0);
-        }
-      }
+       body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.about, .experience, .skills, .certifications {
+  padding: 30px;
+  background-color: #f2f2f2;
+  margin: 30px 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
     </style>
   </head>
   <body>
     <div class="header">
-      <h1>Mahavir Vora</h1>
-      <h2>Web Developer</h2>
-      <div class="card">
-        <h3>Experience</h3>
-        <p>10+ years</p>
-      </div>
-    </div>
+  <h1>Mahavir Vora</h1>
+  <h3>Software Engineer</h3>
+  <p>Ahmedabad, India</p>
+</div>
+
+<div class="about">
+  <h2>About Me</h2>
+  <p>I am a software engineer with over 5 years of experience in Angular, JavaScript, HTML, CSS, and TypeScript. I have a BE degree and have worked at Brill Brains and Encora Inc. where I held positions such as Software Engineer, Sr. Software Engineer, Technical Lead, and Sr. Technical Lead. I am also certified in MongoDB and Microsoft JavaScript.</p>
+</div>
+
+<div class="experience">
+  <h2>Work Experience</h2>
+  <ul>
+    <li>Brill Brains - Software Engineer</li>
+    <li>Encora Inc. - Sr. Software Engineer, Technical Lead, Sr. Technical Lead</li>
+  </ul>
+</div>
+
+<div class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Angular</li>
+    <li>JavaScript</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>TypeScript</li>
+  </ul>
+</div>
+
+<div class="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>MongoDB</li>
+    <li>Microsoft JavaScript Exam</li>
+  </ul>
+</div>
+
   </body>
 </html>
