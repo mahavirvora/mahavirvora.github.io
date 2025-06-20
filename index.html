@@ -1,92 +1,149 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mahavir Vora | Web Portfolio</title>
-    <style>
-       body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<html lang="en" class="bg-gray-900 text-white scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahavir | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .cube {
+      perspective: 1000px;
+    }
+    .cube-inner {
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+    .cube:hover .cube-inner {
+      transform: rotateY(180deg);
+    }
+    .cube-front, .cube-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .cube-back {
+      transform: rotateY(180deg);
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
 
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 30px;
-  text-align: center;
-}
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center min-h-screen px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-8 text-center">Mahavir</h1>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl">
+      <!-- Repeat for 7-8 cubes -->
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/400/400" alt="Photo 1" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 1</p>
+          </div>
+        </div>
+      </div>
 
-.header h1 {
-  margin: 0;
-  font-size: 36px;
-}
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/401/401" alt="Photo 2" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 2</p>
+          </div>
+        </div>
+      </div>
 
-.header h3 {
-  margin: 0;
-  font-size: 24px;
-}
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/402/402" alt="Photo 3" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 3</p>
+          </div>
+        </div>
+      </div>
 
-.about, .experience, .skills, .certifications {
-  padding: 30px;
-  background-color: #f2f2f2;
-  margin: 30px 0;
-}
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/403/403" alt="Photo 4" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 4</p>
+          </div>
+        </div>
+      </div>
 
-h2 {
-  margin: 0;
-  font-size: 24px;
-}
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/404/404" alt="Photo 5" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 5</p>
+          </div>
+        </div>
+      </div>
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/405/405" alt="Photo 6" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 6</p>
+          </div>
+        </div>
+      </div>
 
-li {
-  margin: 10px 0;
-}
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/406/406" alt="Photo 7" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 7</p>
+          </div>
+        </div>
+      </div>
 
-    </style>
-  </head>
-  <body>
-    <div class="header">
-  <h1>Mahavir Vora</h1>
-  <h3>Software Engineer</h3>
-  <p>Ahmedabad, India</p>
-</div>
+      <div class="cube w-40 h-40">
+        <div class="cube-inner">
+          <div class="cube-front">
+            <img src="https://placekitten.com/407/407" alt="Photo 8" class="w-full h-full object-cover rounded-2xl"/>
+          </div>
+          <div class="cube-back">
+            <p class="text-xl font-semibold">Caption 8</p>
+          </div>
+        </div>
+      </div>
 
-<div class="about">
-  <h2>About Me</h2>
-  <p>I am a software engineer with over 5 years of experience in Angular, JavaScript, HTML, CSS, and TypeScript. I have a BE degree and have worked at Brill Brains and Encora Inc. where I held positions such as Software Engineer, Sr. Software Engineer, Technical Lead, and Sr. Technical Lead. I am also certified in MongoDB and Microsoft JavaScript.</p>
-</div>
+    </div>
+  </section>
 
-<div class="experience">
-  <h2>Work Experience</h2>
-  <ul>
-    <li>Brill Brains - Software Engineer</li>
-    <li>Encora Inc. - Sr. Software Engineer, Technical Lead, Sr. Technical Lead</li>
-  </ul>
-</div>
+  <!-- About Section -->
+  <section class="px-6 py-20 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+    <p class="text-lg md:text-xl text-gray-300">
+      I am Mahavir, a Full Stack Developer specializing in building intelligent, scalable systems that bridge AI and modern software engineering. I turn practical ideas into robust, maintainable solutions.
+    </p>
+  </section>
 
-<div class="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Angular</li>
-    <li>JavaScript</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>TypeScript</li>
-  </ul>
-</div>
+  <!-- Footer -->
+  <footer class="mt-auto p-6 text-center text-gray-400">
+    &copy; 2025 Mahavir. All rights reserved.
+  </footer>
 
-<div class="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>MongoDB</li>
-    <li>Microsoft JavaScript Exam</li>
-  </ul>
-</div>
-
-  </body>
+</body>
 </html>
