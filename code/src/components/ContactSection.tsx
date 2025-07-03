@@ -40,8 +40,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "mahavir.vora@example.com",
-      href: "mailto:mahavir.vora@example.com"
+      value: "voramahavir@gmail.com",
+      href: "mailto:voramahavir@gmail.com"
     },
     {
       icon: Linkedin,
@@ -83,6 +83,8 @@ const ContactSection = () => {
                   <CardContent className="p-6">
                     <a 
                       href={method.href} 
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center space-x-4 text-white hover:text-blue-400 transition-colors duration-200"
                     >
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
@@ -99,7 +101,7 @@ const ContactSection = () => {
             </div>
 
             {/* Availability */}
-            <Card className="glass-effect border-gray-700">
+            {/* <Card className="glass-effect border-gray-700">
               <CardContent className="p-6">
                 <h4 className="text-lg font-semibold text-white mb-2">Current Availability</h4>
                 <p className="text-gray-400">
@@ -111,7 +113,7 @@ const ContactSection = () => {
                   <span className="text-green-400 text-sm font-medium">Available for new projects</span>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
 
           {/* Contact Form */}

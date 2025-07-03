@@ -31,13 +31,13 @@ const HeroSection = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-white">Hi, I'm</span>
+            <span className="block text-white mb-6">Hi, I'm</span>
             <span className="block gradient-text animate-glow">Mahavir Vora</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Senior Technical Lead & Web Developer crafting elegant, 
-            <span className="gradient-text font-semibold"> performant solutions</span> with modern technologies
+            Senior Technical Lead delivering scalable, elegant 
+            <span className="gradient-text font-semibold"> web solutions</span> through thoughtful engineering.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -60,15 +60,15 @@ const HeroSection = () => {
 
           <div className="flex justify-center space-x-6 text-gray-400">
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">8+</div>
+              <div className="text-2xl font-bold text-white">9+</div>
               <div className="text-sm">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">50+</div>
+              <div className="text-2xl font-bold text-white">25+</div>
               <div className="text-sm">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">25+</div>
+              <div className="text-2xl font-bold text-white">15+</div>
               <div className="text-sm">Happy Clients</div>
             </div>
           </div>

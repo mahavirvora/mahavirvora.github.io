@@ -27,17 +27,17 @@ const SkillsSection = () => {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
+        { name: "Angular", level: 95 },
+        { name: "React", level: 90 },
         { name: "JavaScript", level: 95 },
-        { name: "HTML/CSS", level: 98 },
-        { name: "Tailwind CSS", level: 90 }
+        { name: "TypeScript", level: 98 },
+        { name: "HTML/CSS", level: 90 }
       ]
     },
     {
       title: "Backend Development",
       skills: [
-        { name: ".NET Core", level: 92 },
+        { name: ".NET Core", level: 80 },
         { name: "Node.js", level: 85 },
         { name: "C#", level: 90 },
         { name: "SQL Server", level: 88 },
@@ -51,7 +51,7 @@ const SkillsSection = () => {
         { name: "Git", level: 95 },
         { name: "Docker", level: 75 },
         { name: "REST APIs", level: 92 },
-        { name: "GraphQL", level: 70 }
+        { name: "AI", level: 90 }
       ]
     }
   ];

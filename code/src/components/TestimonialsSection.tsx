@@ -10,39 +10,39 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Product Manager",
-      company: "TechCorp Solutions",
-      content: "Mahavir's technical expertise and leadership skills are exceptional. He delivered our e-commerce platform ahead of schedule and exceeded all performance requirements. His attention to detail and ability to communicate complex concepts clearly made him invaluable to our team.",
+      name: "Ushma Nair",
+      role: "Project Manager",
+      company: "Encora",
+      content: "Ridiculously efficient’ is the phrase that comes to mind when I think about Mahavir. I had the pleasure of working with him for few years at the Encora Company, collaborating on several project teams. I was particularly impressed by his ability to handle even the toughest clients effortlessly. That skill often takes years to develop among customer service professionals, but it seemed to come perfectly naturally to him. Mahavir's ability to juggle multiple projects was unlike any I’ve seen before and made a dramatic difference in the productivity level of our team. He would be an asset to any team.",
       rating: 5,
-      avatar: "SJ"
+      avatar: "UN"
     },
     {
       id: 2,
-      name: "David Chen",
-      role: "CTO",
-      company: "StartupXYZ",
-      content: "Working with Mahavir was a game-changer for our startup. His full-stack expertise helped us build a scalable architecture from day one. He's not just a great developer but also an excellent mentor who helped elevate our entire development team.",
+      name: "Chandan Kotak",
+      role: "SSE",
+      company: "",
+      content: "Having had the honor of collaborating closely with Mahavir at BrillBrains Technolabs, I am enthusiastic in endorsing his remarkable proficiency in PHP, CodeIgniter, and Angular. His skillfulness in effectively addressing intricate issues and his eagerness to welcome novel obstacles underscore his flexibility. Mahavir's consistent commitment to honing fresh abilities not only demonstrates his dedication but also establishes him as an indispensable resource for any undertaking.",
       rating: 5,
-      avatar: "DC"
+      avatar: "CK"
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Project Director",
-      company: "Digital Innovations Ltd",
-      content: "Mahavir consistently delivers high-quality solutions with remarkable efficiency. His deep understanding of both frontend and backend technologies, combined with his problem-solving skills, makes him one of the best developers I've worked with.",
+      name: "Parth Modi",
+      role: "SSE",
+      company: "Encora",
+      content: "Mahavir is one of the best Team Leaders I ever worked with in my career. During the past 2 years, I had the pleasure of working on the same project where he is leading the entire project. His ability to lead multiple projects simultaneously is commendable. He always keeps the team motivated and shares his precious knowledge. He is the go-to guy for all my project related queries. His calm yet focused and genial nature makes him a valuable asset to our team. I wish him all the success in all his future endeavors.",
       rating: 5,
-      avatar: "ER"
+      avatar: "PM"
     },
     {
       id: 4,
-      name: "Michael Thompson",
-      role: "Senior Developer",
-      company: "CloudTech Systems",
-      content: "As a colleague, Mahavir is someone you can always count on. His code reviews are thorough, his technical insights are valuable, and his collaborative approach makes every project better. He's truly a senior developer in every sense.",
+      name: "Darshit Shah",
+      role: "Senior QA",
+      company: "Encora",
+      content: "Mahavir is a very productive front end developer and does his best to get the job done. He is committed and dedicated to his work. His devotion and commitment to helping both clients and co-workers find solutions to problems will no doubt be greatly valued anywhere he goes. I highly recommend Mahavir as a valuable member of any development team.",
       rating: 5,
-      avatar: "MT"
+      avatar: "DS"
     }
   ];
 
@@ -66,10 +66,10 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Client <span className="gradient-text">Testimonials</span>
+            <span className="gradient-text">Testimonials</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            What colleagues and clients say about working with me
+            What colleagues say about working with me
           </p>
         </div>
 

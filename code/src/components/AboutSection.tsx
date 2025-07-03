@@ -10,7 +10,7 @@ const AboutSection = () => {
     },
     {
       title: "Modern Tech Stack",
-      description: "Expertise in React, TypeScript, .NET, Node.js, and cloud technologies for scalable solutions."
+      description: "Expertise in Angular, React, TypeScript, .NET, Node.js, and cloud technologies for scalable solutions."
     },
     {
       title: "Performance Focus",
@@ -39,22 +39,18 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="prose prose-lg text-gray-300">
               <p className="text-lg leading-relaxed">
-                As a Senior Technical Lead based in India, I bring over 8 years of experience in web development, 
-                specializing in creating robust, scalable applications that solve real-world problems.
+                I'm a Senior Technical Lead based in India with over 9 years of hands-on experience in web development. I specialize in building robust, scalable, and high-performing applications that address real-world business challenges.
               </p>
               <p className="text-lg leading-relaxed">
-                My journey in technology has been driven by a passion for continuous learning and innovation. 
-                I excel at bridging the gap between complex technical requirements and user-friendly solutions, 
-                ensuring that every project delivers both exceptional performance and outstanding user experience.
+                My career has been shaped by a passion for continuous learning and a drive for innovation. I take pride in bridging the gap between complex technical architectures and intuitive, user-friendly experiences—ensuring every solution is both technically sound and easy to use.
               </p>
               <p className="text-lg leading-relaxed">
-                When I'm not coding, I enjoy mentoring upcoming developers, contributing to open-source projects, 
-                and staying updated with the latest industry trends and best practices.
+                Beyond coding, I actively mentor aspiring developers, contribute to open-source initiatives, and stay deeply engaged with emerging technologies, industry trends, and best practices.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
-              {['JavaScript', 'TypeScript', 'React', '.NET', 'Node.js', 'Azure', 'SQL Server'].map((tech) => (
+              {['Angular', 'JavaScript', 'TypeScript', 'React', 'React-native', '.NET', 'Node.js', 'PHP', 'Codeigniter', 'Azure', 'SQL Server'].map((tech) => (
                 <span key={tech} className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
                   {tech}
                 </span>

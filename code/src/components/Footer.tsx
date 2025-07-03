@@ -8,7 +8,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Mail,
-      href: "mailto:mahavir.vora@example.com",
+      href: "mailto:voramahavir@gmail.com",
       label: "Email"
     },
     {
