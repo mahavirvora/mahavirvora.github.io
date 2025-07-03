@@ -1,1 +1,0 @@
-# mahavirvora.github.io
