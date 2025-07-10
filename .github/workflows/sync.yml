@@ -18,4 +18,4 @@ jobs:
         with:
           github_token: ${{ secrets.TARGET_REPO_TOKEN }}
           repository: voramahavir/voramahavir.github.io
-          branch: main
+          branch: master
