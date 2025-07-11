@@ -39,7 +39,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="prose prose-lg text-gray-300">
               <p className="text-lg leading-relaxed">
-                I'm a Senior Technical Lead based in India with over 9 years of hands-on experience in web development. I specialize in building robust, scalable, and high-performing applications that address real-world business challenges.
+                I'm an Engineering Manager based in India with over 9+ years of hands-on experience in web development. I specialize in building robust, scalable, and high-performing applications that address real-world business challenges.
               </p>
               <p className="text-lg leading-relaxed">
                 My career has been shaped by a passion for continuous learning and a drive for innovation. I take pride in bridging the gap between complex technical architectures and intuitive, user-friendly experiences—ensuring every solution is both technically sound and easy to use.

@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold gradient-text mb-2">Mahavir Vora</h3>
-            <p className="text-gray-400">Senior Technical Lead & Web Developer</p>
+            <p className="text-gray-400">Engineering Manager</p>
           </div>
 
           {/* Social Links */}

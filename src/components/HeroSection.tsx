@@ -36,7 +36,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Senior Technical Lead delivering scalable, elegant 
+            Engineering Manager delivering scalable, elegant 
             <span className="gradient-text font-semibold"> web solutions</span> through thoughtful engineering.
           </p>
 
