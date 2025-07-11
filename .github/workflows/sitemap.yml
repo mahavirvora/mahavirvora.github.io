@@ -20,6 +20,7 @@ jobs:
         with:
           base-url-path: https://mahavirvora.github.io/
           path-to-root: docs
+          output-path: docs/sitemap.xml
 
       - name: Commit sitemap if updated
         run: |
