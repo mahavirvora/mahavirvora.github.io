@@ -20,27 +20,29 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Install Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # Install dependencies
       - name: Install dependencies
         run: npm ci
 
+      # Build site with Vite
       - name: Build site
         run: npm run build
 
+      # Generate sitemap into dist/
       - name: Generate sitemap.xml
-        id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://mahavirvora.github.io/
           path-to-root: dist
+          output-path: dist/sitemap.xml
 
-      - name: Move sitemap.xml into dist/
-        run: mv sitemap.xml dist/sitemap.xml
-
+      # Deploy to GitHub Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
