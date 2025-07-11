@@ -19,6 +19,7 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://mahavirvora.github.io/
+          path-to-root: docs
 
       - name: Commit sitemap if updated
         run: |
