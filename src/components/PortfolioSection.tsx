@@ -6,33 +6,33 @@ import { Button } from "@/components/ui/button";
 const PortfolioSection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Frontend', 'Full Stack', '.NET', 'React'];
+  const filters = ['All', 'Frontend', 'Full Stack', '.NET', 'Angular', 'React', 'PHP', 'Node.js', 'FinTech', 'E-commerce'];
 
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and payment integration",
+      title: "NFM Sales App",
+      description: "Suite of multiple Angular applications for in-store sales operations, packaged with .NET and WPF containers for Microsoft Surface deployment.",
       category: "Full Stack",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      tags: ["Angular", ".NET", "WPF", "Azure", "E-commerce"],
       image: "photo-1486312338219-ce68d2c6f44d",
       demoUrl: "#",
       codeUrl: "#"
     },
     {
       id: 2,
-      title: "Enterprise Dashboard",
-      description: "Real-time analytics dashboard built with React and .NET Core API",
+      title: "Quantamize – FinTech Platform",
+      description: "Financial services platform developed using DotNetNuke for modern investment management. Focused on performance optimization and modular feature development.",
       category: ".NET",
-      tags: [".NET Core", "React", "SignalR", "SQL Server"],
+      tags: ["DotNetNuke", ".NET", "SQL Server", "FinTech"],
       image: "photo-1461749280684-dccba630e2f6",
       demoUrl: "#",
       codeUrl: "#"
     },
     {
       id: 3,
-      title: "Portfolio Website",
-      description: "Responsive portfolio website with modern animations and interactions",
+      title: "AssetMark Advisor Dashboard",
+      description: "Real-time wealth management dashboard with reusable React components and API integrations.",
       category: "Frontend",
       tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       image: "photo-1487058792275-0ad4aaf24ca7",
@@ -41,30 +41,40 @@ const PortfolioSection = () => {
     },
     {
       id: 4,
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates",
-      category: "Full Stack",
-      tags: ["React", "Firebase", "Material-UI", "PWA"],
+      title: "Save Day Platform",
+      description: "Financial wellness web app built with AngularJS, Node.js, and Java backend services.",
+      category: "Frontend",
+      tags: ["AngularJS", "Node.js", "MongoDB", "Express"],
       image: "photo-1488590528505-98d2b5aba04b",
       demoUrl: "#",
       codeUrl: "#"
     },
     {
       id: 5,
-      title: "Learning Management System",
-      description: "Educational platform with course management and progress tracking",
-      category: ".NET",
-      tags: [".NET", "Angular", "Entity Framework", "Azure"],
+      title: "Say Dil Se Admin Panel",
+      description: "Backend and admin panel for a card sharing mobile app, built using CodeIgniter and AngularJS APIs.",
+      category: "Full Stack",
+      tags: ["PHP", "CodeIgniter", "MySQL", "AngularJS"],
       image: "photo-1581091226825-a6a2a5aee158",
       demoUrl: "#",
       codeUrl: "#"
     },
     {
       id: 6,
-      title: "Weather Dashboard",
-      description: "Interactive weather application with location-based forecasts",
-      category: "React",
-      tags: ["React", "OpenWeather API", "Chart.js", "Geolocation"],
+      title: "Unique MEP Invoicing System",
+      description: "Role-based invoicing and project management portal developed with PHP CodeIgniter.",
+      category: "Full Stack",
+      tags: ["PHP", "CodeIgniter", "Bootstrap", "MySQL"],
+      image: "photo-1649972904349-6e44c42644a7",
+      demoUrl: "#",
+      codeUrl: "#"
+    },
+    {
+      id: 7,
+      title: "Awesomefab Shopping Platform",
+      description: "E-commerce admin panel enhancements and inventory workflows using CodeIgniter.",
+      category: "Full Stack",
+      tags: ["PHP", "CodeIgniter", "MySQL", "E-commerce"],
       image: "photo-1649972904349-6e44c42644a7",
       demoUrl: "#",
       codeUrl: "#"
