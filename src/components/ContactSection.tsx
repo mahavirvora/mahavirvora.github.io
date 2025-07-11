@@ -25,7 +25,7 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const formUrl = "https://docs.google.com/forms/d/e/1XIXz8KBQOiydwxnVW24B1ZyngR3RoaVdu8CGJ_v55Kc/formResponse";
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScUuigQBOJAXu1qIsMYfnr-evAyJ3TUgaYUzDCq1zdFJmP1Ow/formResponse";
 
     const formDataToSend = new FormData();
     formDataToSend.append("entry.465740589", formData.name);    // Name
