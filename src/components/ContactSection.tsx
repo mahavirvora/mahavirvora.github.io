@@ -25,16 +25,34 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const formUrl = "https://docs.google.com/forms/d/e/1XIXz8KBQOiydwxnVW24B1ZyngR3RoaVdu8CGJ_v55Kc/formResponse";
 
-    toast.success("Message sent successfully! I'll get back to you soon.", {
-      duration: 4000,
-    });
+    const formDataToSend = new FormData();
+    formDataToSend.append("entry.465740589", formData.name);    // Name
+    formDataToSend.append("entry.1122199151", formData.email);   // Email
+    formDataToSend.append("entry.1683567598", formData.subject); // Subject
+    formDataToSend.append("entry.563925830", formData.message); // Message
 
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      await fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formDataToSend
+      });
+
+      toast.success("Message sent successfully! I'll get back to you soon.", {
+        duration: 4000,
+      });
+
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send the message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
 
   const contactMethods = [
     {
