@@ -2,7 +2,8 @@ name: Generate Sitemap
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - master
 
 jobs:
   sitemap:
