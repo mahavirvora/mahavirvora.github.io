@@ -55,7 +55,7 @@ const PortfolioSection = () => {
       description: "Backend and admin panel for a card sharing mobile app, built using CodeIgniter and AngularJS APIs.",
       category: "Full Stack",
       tags: ["PHP", "CodeIgniter", "MySQL", "AngularJS"],
-      image: "photo-1581091226825-a6a2a5aee158",
+      image: "photo-1486312338219-ce68d2c6f44d",
       demoUrl: "#",
       codeUrl: "#"
     },
@@ -65,7 +65,7 @@ const PortfolioSection = () => {
       description: "Role-based invoicing and project management portal developed with PHP CodeIgniter.",
       category: "Full Stack",
       tags: ["PHP", "CodeIgniter", "Bootstrap", "MySQL"],
-      image: "photo-1649972904349-6e44c42644a7",
+      image: "photo-1461749280684-dccba630e2f6",
       demoUrl: "#",
       codeUrl: "#"
     },
@@ -75,7 +75,7 @@ const PortfolioSection = () => {
       description: "E-commerce admin panel enhancements and inventory workflows using CodeIgniter.",
       category: "Full Stack",
       tags: ["PHP", "CodeIgniter", "MySQL", "E-commerce"],
-      image: "photo-1649972904349-6e44c42644a7",
+      image: "photo-1488590528505-98d2b5aba04b",
       demoUrl: "#",
       codeUrl: "#"
     }
@@ -125,7 +125,7 @@ const PortfolioSection = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4 space-x-2">
                     <Button size="sm" className="bg-blue-500 hover:bg-blue-600">
                       Live Demo
@@ -134,7 +134,7 @@ const PortfolioSection = () => {
                       View Code
                     </Button>
                   </div>
-                </div>
+                </div> */}
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
