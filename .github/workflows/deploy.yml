@@ -40,7 +40,7 @@ jobs:
         with:
           base-url-path: https://mahavirvora.github.io/
           path-to-root: dist
-          output-path: dist/sitemap.xml
+          output-path: public/sitemap.xml
 
       # Deploy to GitHub Pages
       - name: Upload artifact
