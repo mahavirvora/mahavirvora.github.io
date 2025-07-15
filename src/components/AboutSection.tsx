@@ -60,13 +60,8 @@ const AboutSection = () => {
 
           {/* Profile Image Placeholder */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl glass-effect p-8 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-white">MV</span>
-                </div>
-                <p className="text-gray-400">Professional Photo</p>
-              </div>
+            <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl glass-effect flex items-center justify-center">
+              <img src="mahavirvora.png" alt="Mahavir Vora Profile" className="object-cover" />
             </div>
           </div>
         </div>
