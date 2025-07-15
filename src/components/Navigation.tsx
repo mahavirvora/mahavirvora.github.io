@@ -38,7 +38,9 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className={`flex-shrink-0 transition-opacity duration-300 ${
+            isScrolled ? 'opacity-100' : 'opacity-0'
+          }`}>
             <h1 className="text-2xl font-bold gradient-text">Mahavir Vora</h1>
           </div>
 
