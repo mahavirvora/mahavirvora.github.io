@@ -65,7 +65,7 @@ const Navigation = () => {
                 </button>
               ))}
               {/* Theme Toggle */}
-              <div className="flex items-center space-x-2 ml-4">
+              {/* <div className="flex items-center space-x-2 ml-4">
                 <Sun className="h-4 w-4 text-yellow-500" />
                 <Switch
                   checked={resolvedTheme === 'dark'}
@@ -73,14 +73,14 @@ const Navigation = () => {
                   className="data-[state=checked]:bg-primary data-[state=unchecked]:bg-muted"
                 />
                 <Moon className="h-4 w-4 text-primary" />
-              </div>
+              </div> */}
             </div>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4">
             {/* Mobile Theme Toggle */}
-            <div className="flex items-center space-x-1">
+            {/* <div className="flex items-center space-x-1">
               <Sun className="h-3 w-3 text-yellow-500" />
               <Switch
                 checked={resolvedTheme === 'dark'}
@@ -88,7 +88,7 @@ const Navigation = () => {
                 className="scale-75 data-[state=checked]:bg-primary data-[state=unchecked]:bg-muted"
               />
               <Moon className="h-3 w-3 text-primary" />
-            </div>
+            </div> */}
 
             {/* Mobile Menu Toggle */}
             <button
