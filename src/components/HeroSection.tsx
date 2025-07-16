@@ -37,12 +37,12 @@ const HeroSection = () => {
         <div className={`transition-all duration-1000 transform ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-white mb-6">Hi, I'm</span>
-            <span className="block gradient-text animate-glow">Mahavir Vora</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-12 leading-tight">
+            <span className="block text-white mb-12">Hi, I'm</span>
+            <span className="block gradient-text animate-glow py-6">Mahavir Vora</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             Engineering Manager delivering scalable, elegant 
             <span className="gradient-text font-semibold"> web solutions</span> through thoughtful engineering.
           </p>

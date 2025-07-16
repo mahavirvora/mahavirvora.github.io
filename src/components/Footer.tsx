@@ -59,7 +59,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Mahavir Vora. All rights reserved. Built with React, TypeScript & Tailwind CSS.
+            © {currentYear} Mahavir Vora. All rights reserved. Created with dedication.
           </p>
         </div>
       </div>

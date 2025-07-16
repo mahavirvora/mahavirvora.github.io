@@ -1,10 +1,17 @@
 
-import React, { useState, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
+import { useState, useEffect } from 'react';
+import { Switch } from "@/components/ui/switch";
+import { useTheme } from "next-themes";
+import { Sun, Moon } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,11 +64,33 @@ const Navigation = () => {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
                 </button>
               ))}
+              {/* Theme Toggle */}
+              <div className="flex items-center space-x-2 ml-4">
+                <Sun className="h-4 w-4 text-yellow-500" />
+                <Switch
+                  checked={resolvedTheme === 'dark'}
+                  onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+                  className="data-[state=checked]:bg-primary data-[state=unchecked]:bg-muted"
+                />
+                <Moon className="h-4 w-4 text-blue-400" />
+              </div>
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-4">
+            {/* Mobile Theme Toggle */}
+            <div className="flex items-center space-x-1">
+              <Sun className="h-3 w-3 text-yellow-500" />
+              <Switch
+                checked={resolvedTheme === 'dark'}
+                onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+                className="scale-75 data-[state=checked]:bg-primary data-[state=unchecked]:bg-muted"
+              />
+              <Moon className="h-3 w-3 text-blue-400" />
+            </div>
+
+            {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-300 hover:text-white focus:outline-none"

@@ -39,13 +39,13 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="prose prose-lg text-gray-300">
               <p className="text-lg leading-relaxed">
-                I'm an Engineering Manager based in India with over 9+ years of hands-on experience in web development. I specialize in building robust, scalable, and high-performing applications that address real-world business challenges.
+                I'm an Engineering Manager based in India with over 9 years of experience in web development. I focus on building strong, scalable, and high-performing applications that solve real business problems.
               </p>
               <p className="text-lg leading-relaxed">
-                My career has been shaped by a passion for continuous learning and a drive for innovation. I take pride in bridging the gap between complex technical architectures and intuitive, user-friendly experiences—ensuring every solution is both technically sound and easy to use.
+                Throughout my career, I've been driven by a love for learning and a desire to create new and better solutions. I enjoy making complex technical systems simple and user-friendly, so anyone can use them with ease.
               </p>
               <p className="text-lg leading-relaxed">
-                Beyond coding, I actively mentor aspiring developers, contribute to open-source initiatives, and stay deeply engaged with emerging technologies, industry trends, and best practices.
+                Besides coding, I mentor new developers, contribute to open-source projects, and keep up with the latest technologies, trends, and best practices in the industry.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ const AboutSection = () => {
           </div>
 
           {/* Profile Image Placeholder */}
-          <div className="relative">
+          <div className="relative max-w-[420px] mx-auto">
             <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl glass-effect flex items-center justify-center">
               <img src="mahavirvora.png" alt="Mahavir Vora Profile" className="object-cover" />
             </div>
