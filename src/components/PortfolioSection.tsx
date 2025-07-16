@@ -86,7 +86,7 @@ const PortfolioSection = () => {
     : projects.filter(project => project.category === activeFilter || project.tags.includes(activeFilter));
 
   return (
-    <section id="portfolio" className="section-padding bg-portfolio-dark">
+    <section id="portfolio" className="section-padding dark:bg-portfolio-dark">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
