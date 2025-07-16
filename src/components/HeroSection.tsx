@@ -16,6 +16,13 @@ const HeroSection = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  
+  const scrollToAboutMe = () => {
+    const element = document.querySelector('#about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-portfolio-darker via-portfolio-dark to-gray-900 overflow-hidden">
@@ -76,7 +83,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={scrollToAboutMe}>
         <ChevronDown className="w-6 h-6 text-gray-400" />
       </div>
     </section>
