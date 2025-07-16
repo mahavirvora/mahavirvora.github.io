@@ -5,6 +5,42 @@
 
 @layer base {
   :root {
+    /* Backgrounds & Surfaces */
+    --background: 220 15% 98%;         /* very light off‑white */
+    --card: 0 0% 100%;                /* pure white */
+    --popover: 0 0% 100%;             /* pure white */
+    --input: 0 0% 100%;               /* pure white */
+
+    /* Text & Foregrounds */
+    --foreground: 220 15% 20%;         /* dark charcoal */
+    --card-foreground: 220 15% 20%;    
+    --popover-foreground: 220 15% 20%; 
+    
+    /* Primary brand color */
+    --primary: 217 91% 60%;            /* your blue accent */
+    --primary-foreground: 0 0% 100%;   /* white text on blue */
+
+    /* Secondary & muted tones */
+    --secondary: 210 16% 94%;          /* very light grey‑blue */
+    --secondary-foreground: 220 15% 30%; /* medium grey */
+    --muted: 210 20% 90%;              /* light grey */
+    --muted-foreground: 220 10% 60%;   /* mid grey */
+
+    /* Accent & destructive actions */
+    --accent: 48 100% 67%;             /* warm yellow */
+    --accent-foreground: 220 15% 20%;  /* dark text on yellow */
+    --destructive: 0 78% 63%;          /* soft red */
+    --destructive-foreground: 0 0% 100%; /* white */
+
+    /* Borders, focus rings, etc. */
+    --border: 210 20% 85%;             /* light grey border */
+    --ring: 217 91% 60%;               /* same as primary */
+    
+    /* Radius */
+    --radius: 0.5rem;
+  }
+
+  .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
@@ -43,11 +79,11 @@
   }
   
   .glass-effect {
-    @apply backdrop-blur-sm bg-white/5 border border-white/10;
+    @apply backdrop-blur-sm bg-background/10 border border-border/20;
   }
   
   .hover-lift {
-    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20;
+    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20;
   }
   
   .section-padding {
@@ -61,14 +97,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: hsl(var(--muted));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6;
+  background: hsl(var(--primary));
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: hsl(var(--primary) / 0.8);
 }

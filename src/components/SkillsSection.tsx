@@ -59,8 +59,8 @@ const SkillsSection = () => {
   const SkillBar = ({ skill, index }: { skill: { name: string; level: number }; index: number }) => (
     <div className="mb-4">
       <div className="flex justify-between items-center mb-2">
-        <span className="text-white font-medium">{skill.name}</span>
-        <span className="text-blue-400 text-sm">{skill.level}%</span>
+        <span className="text-foreground font-medium">{skill.name}</span>
+        <span className="text-primary text-sm">{skill.level}%</span>
       </div>
       <div className="w-full bg-gray-700 rounded-full h-2">
         <div 
@@ -81,7 +81,7 @@ const SkillsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Technical <span className="gradient-text">Skills</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Expertise across the full stack with a focus on modern technologies and best practices
           </p>
         </div>
@@ -90,7 +90,7 @@ const SkillsSection = () => {
           {skillCategories.map((category, categoryIndex) => (
             <Card key={category.title} className="glass-effect border-gray-700 hover-lift">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-6 text-center">{category.title}</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-6 text-center">{category.title}</h3>
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <SkillBar 
@@ -107,7 +107,7 @@ const SkillsSection = () => {
 
         {/* Additional Skills Grid */}
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-white mb-8">Additional Expertise</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8">Additional Expertise</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
               'Agile/Scrum', 'Team Leadership', 'Code Review', 'Performance Optimization',

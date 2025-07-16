@@ -23,13 +23,13 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-gradient-to-b from-gray-900 to-portfolio-dark">
+    <section id="about" className="section-padding bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Passionate about creating exceptional digital experiences through innovative web development
           </p>
         </div>
@@ -71,8 +71,8 @@ const AboutSection = () => {
           {highlights.map((highlight, index) => (
             <Card key={index} className="glass-effect border-gray-700 hover-lift">
               <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-3">{highlight.title}</h3>
-                <p className="text-gray-400 text-sm">{highlight.description}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-3">{highlight.title}</h3>
+                <p className="text-muted-foreground text-sm">{highlight.description}</p>
               </CardContent>
             </Card>
           ))}

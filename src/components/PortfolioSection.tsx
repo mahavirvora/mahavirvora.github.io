@@ -92,7 +92,7 @@ const PortfolioSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             My <span className="gradient-text">Portfolio</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of projects that demonstrate my expertise in modern web development
           </p>
         </div>
@@ -105,8 +105,8 @@ const PortfolioSection = () => {
               variant={activeFilter === filter ? "default" : "outline"}
               className={`rounded-full px-6 py-2 transition-all duration-300 ${
                 activeFilter === filter
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white'
-                  : 'border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white'
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-foreground'
+                  : 'border-gray-600 text-gray-300 hover:bg-muted hover:text-foreground'
               }`}
               onClick={() => setActiveFilter(filter)}
             >
@@ -130,18 +130,18 @@ const PortfolioSection = () => {
                     <Button size="sm" className="bg-blue-500 hover:bg-blue-600">
                       Live Demo
                     </Button>
-                    <Button size="sm" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+                    <Button size="sm" variant="outline" className="border-white text-foreground hover:bg-white hover:text-gray-900">
                       View Code
                     </Button>
                   </div>
                 </div> */}
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4 text-sm leading-relaxed">{project.description}</p>
+                <h3 className="text-xl font-semibold text-foreground mb-2">{project.title}</h3>
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="px-2 py-1 bg-gray-800 text-blue-300 rounded text-xs font-medium">
+                    <span key={tag} className="px-2 py-1 bg-muted text-blue-300 rounded text-xs font-medium">
                       {tag}
                     </span>
                   ))}

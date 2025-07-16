@@ -58,7 +58,7 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200 relative group"
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
@@ -72,7 +72,7 @@ const Navigation = () => {
                   onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
                   className="data-[state=checked]:bg-primary data-[state=unchecked]:bg-muted"
                 />
-                <Moon className="h-4 w-4 text-blue-400" />
+                <Moon className="h-4 w-4 text-primary" />
               </div>
             </div>
           </div>
@@ -87,13 +87,13 @@ const Navigation = () => {
                 onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
                 className="scale-75 data-[state=checked]:bg-primary data-[state=unchecked]:bg-muted"
               />
-              <Moon className="h-3 w-3 text-blue-400" />
+              <Moon className="h-3 w-3 text-primary" />
             </div>
 
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-300 hover:text-white focus:outline-none"
+              className="text-muted-foreground hover:text-foreground focus:outline-none"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
@@ -111,7 +111,7 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-200"
                 >
                   {item.name}
                 </button>

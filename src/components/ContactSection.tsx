@@ -76,7 +76,7 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to discuss your next project? Let's create something amazing together.
           </p>
         </div>
@@ -85,8 +85,8 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Let's Connect</h3>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">Let's Connect</h3>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 I'm always interested in discussing new opportunities, innovative projects, 
                 and potential collaborations. Whether you're looking for a technical lead, 
                 need development expertise, or want to explore how we can work together, 
@@ -103,14 +103,14 @@ const ContactSection = () => {
                       href={method.href} 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-4 text-white hover:text-blue-400 transition-colors duration-200"
+                      className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors duration-200"
                     >
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                         <method.icon className="w-6 h-6" />
                       </div>
                       <div>
                         <h4 className="font-semibold">{method.title}</h4>
-                        <p className="text-gray-400">{method.value}</p>
+                        <p className="text-muted-foreground">{method.value}</p>
                       </div>
                     </a>
                   </CardContent>
@@ -121,8 +121,8 @@ const ContactSection = () => {
             {/* Availability */}
             {/* <Card className="glass-effect border-gray-700">
               <CardContent className="p-6">
-                <h4 className="text-lg font-semibold text-white mb-2">Current Availability</h4>
-                <p className="text-gray-400">
+                <h4 className="text-lg font-semibold text-foreground mb-2">Current Availability</h4>
+                <p className="text-muted-foreground">
                   I'm currently available for new projects and consulting opportunities. 
                   Let's discuss how I can help bring your vision to life.
                 </p>
@@ -150,7 +150,7 @@ const ContactSection = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-blue-500"
+                      className="bg-muted border-gray-600 text-foreground placeholder-gray-400 focus:border-blue-500"
                       placeholder="John Doe"
                     />
                   </div>
@@ -165,7 +165,7 @@ const ContactSection = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-blue-500"
+                      className="bg-muted border-gray-600 text-foreground placeholder-gray-400 focus:border-blue-500"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -182,7 +182,7 @@ const ContactSection = () => {
                     required
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-blue-500"
+                    className="bg-muted border-gray-600 text-foreground placeholder-gray-400 focus:border-blue-500"
                     placeholder="Project Discussion"
                   />
                 </div>
@@ -198,7 +198,7 @@ const ContactSection = () => {
                     rows={5}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-blue-500 resize-none"
+                    className="bg-muted border-gray-600 text-foreground placeholder-gray-400 focus:border-blue-500 resize-none"
                     placeholder="Tell me about your project or how I can help you..."
                   />
                 </div>
@@ -206,7 +206,7 @@ const ContactSection = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-foreground py-3 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>

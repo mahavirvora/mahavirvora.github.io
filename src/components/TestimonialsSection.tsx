@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Testimonials</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             What colleagues say about working with me
           </p>
         </div>
@@ -98,12 +98,12 @@ const TestimonialsSection = () => {
               {/* Author */}
               <div className="flex items-center justify-center space-x-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">{currentTestimonial.avatar}</span>
+                  <span className="text-foreground font-bold text-lg">{currentTestimonial.avatar}</span>
                 </div>
                 <div className="text-left">
-                  <h4 className="text-white font-semibold text-lg">{currentTestimonial.name}</h4>
-                  <p className="text-gray-400">{currentTestimonial.role}</p>
-                  <p className="text-blue-400 text-sm">{currentTestimonial.company}</p>
+                  <h4 className="text-foreground font-semibold text-lg">{currentTestimonial.name}</h4>
+                  <p className="text-muted-foreground">{currentTestimonial.role}</p>
+                  <p className="text-primary text-sm">{currentTestimonial.company}</p>
                 </div>
               </div>
             </CardContent>
@@ -114,7 +114,7 @@ const TestimonialsSection = () => {
             variant="outline"
             size="icon"
             onClick={prevTestimonial}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 rounded-full border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 rounded-full border-gray-600 text-gray-300 hover:bg-muted hover:text-foreground"
           >
             <ChevronLeft className="h-4 w-4" />
           </Button>
@@ -122,7 +122,7 @@ const TestimonialsSection = () => {
             variant="outline"
             size="icon"
             onClick={nextTestimonial}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 rounded-full border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 rounded-full border-gray-600 text-gray-300 hover:bg-muted hover:text-foreground"
           >
             <ChevronRight className="h-4 w-4" />
           </Button>
