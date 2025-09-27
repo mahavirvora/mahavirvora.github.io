@@ -30,7 +30,7 @@ I'm an **Engineering Manager and Web Developer** passionate about building scala
 
 - [LinkedIn](https://linkedin.com/in/mahavir-vora)
 - [Twitter](https://twitter.com/mjv13)
-- [Personal Website](https://voramahavir.github.io)
+- [Personal Website](https://mahavirvora.github.io)
 
 ---
 
