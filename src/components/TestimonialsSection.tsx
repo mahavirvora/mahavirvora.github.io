@@ -114,6 +114,7 @@ const TestimonialsSection = () => {
             variant="outline"
             size="icon"
             onClick={prevTestimonial}
+            aria-label="Previous testimonial"
             className="absolute left-4 top-1/2 transform -translate-y-1/2 rounded-full border-gray-600 text-gray-300 hover:bg-muted hover:text-foreground"
           >
             <ChevronLeft className="h-4 w-4" />
@@ -122,17 +123,19 @@ const TestimonialsSection = () => {
             variant="outline"
             size="icon"
             onClick={nextTestimonial}
+            aria-label="Next testimonial"
             className="absolute right-4 top-1/2 transform -translate-y-1/2 rounded-full border-gray-600 text-gray-300 hover:bg-muted hover:text-foreground"
           >
             <ChevronRight className="h-4 w-4" />
           </Button>
 
           {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-8 space-x-3">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
+                aria-label={`Go to testimonial ${index + 1}`}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
                     ? 'bg-gradient-to-r from-blue-500 to-purple-600'
